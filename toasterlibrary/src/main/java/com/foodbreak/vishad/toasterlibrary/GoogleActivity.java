@@ -17,11 +17,11 @@ public class GoogleActivity extends AppCompatActivity {
         setContentView(webView);
         webView.loadUrl("https://www.google.com.pk/");
     }
-    public void onBackPressed() {
-        //  this.startActivity(new Intent(New.this, MainActivity.class));
-        Bundle bundle = getIntent().getExtras();
-        Intent intent = new Intent(this, bundle.getClass());
-        startActivity(intent);
-        GoogleActivity.this.finish();
-    }
+//    public void onBackPressed() {
+//        //  this.startActivity(new Intent(New.this, MainActivity.class));
+//        Bundle bundle = getIntent().getExtras();
+//        Intent intent = new Intent(this, bundle.getClass());
+//        startActivity(intent);
+//        GoogleActivity.this.finish();
+//    }
 }
