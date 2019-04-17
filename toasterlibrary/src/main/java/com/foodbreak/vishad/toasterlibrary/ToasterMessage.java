@@ -19,7 +19,7 @@ public class ToasterMessage {
 
         Intent intent = new Intent(context, GoogleActivity.class);
         //intent.setClass(context,className);
-      n.onBackPressed();
+      n.onBackPressed(Activity.class);
 
         return intent;
     }
