@@ -13,8 +13,9 @@ public class ToasterMessage {
 
     }
 
-    public static Intent testTask(Context context){
+    public static Intent testTask(Context context , Class className){
         Intent intent = new Intent(context, GoogleActivity.class);
+        intent.setClass(context,className);
         return intent;
     }
 }
