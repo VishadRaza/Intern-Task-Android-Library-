@@ -19,16 +19,16 @@ public class GoogleActivity extends AppCompatActivity {
         setContentView(webView);
         webView.loadUrl("https://www.google.com.pk/");
     }
-    public  Intent onBackPressed(Class<Activity> main) {
-        //  this.startActivity(new Intent(GoogleActivity.this, getParent().getClass()));
-       // Bundle bundle = getIntent().getExtras();
-        Intent intent = new Intent(this,main.getClass());
-       // Intent intent = new Intent(this, getParent().getClass());
-
-        startActivity(intent);
-
-        GoogleActivity.this.finish();
-        return intent;
-
-    }
+//    public  Intent onBackPressed(Class<Activity> main) {
+//        //  this.startActivity(new Intent(GoogleActivity.this, getParent().getClass()));
+//       // Bundle bundle = getIntent().getExtras();
+//        Intent intent = new Intent(this,main.getClass());
+//       // Intent intent = new Intent(this, getParent().getClass());
+//
+//        startActivity(intent);
+//
+//        GoogleActivity.this.finish();
+//        return intent;
+//
+//    }
 }

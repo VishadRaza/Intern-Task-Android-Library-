@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 public class ToasterMessage {
-   public static GoogleActivity n = new GoogleActivity();
+
 
     public static void sendmessage(Context c, String message){
 
@@ -19,8 +19,6 @@ public class ToasterMessage {
 
         Intent intent = new Intent(context, GoogleActivity.class);
         //intent.setClass(context,className);
-      n.onBackPressed(Activity.class);
-
         return intent;
     }
 }
