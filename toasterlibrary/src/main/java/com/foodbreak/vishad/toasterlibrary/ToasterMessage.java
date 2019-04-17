@@ -13,9 +13,16 @@ public class ToasterMessage {
 
     }
 
-    public static Intent testTask(Context context , Class className){
+    public static Intent testTask(Context context){
+
         Intent intent = new Intent(context, GoogleActivity.class);
-        intent.setClass(context,className);
+        //intent.setClass(context,className);
+        try {
+            intent.setClass(context,Class.forName(String.valueOf(true)));
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
         return intent;
     }
 }
