@@ -3,7 +3,8 @@
     package="com.foodbreak.vishad.toasterlibrary">
 
     <application>
-        <activity android:name=".GoogleActivity"></activity>
+        <activity android:name=".GoogleActivity" />
+        <activity android:name=".Home"></activity>
     </application>
 
 </manifest>

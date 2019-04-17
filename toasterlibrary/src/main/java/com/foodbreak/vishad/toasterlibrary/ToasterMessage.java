@@ -2,6 +2,7 @@ package com.foodbreak.vishad.toasterlibrary;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.widget.Toast;
 
 public class ToasterMessage {
@@ -12,8 +13,9 @@ public class ToasterMessage {
 
     }
 
-    public static Intent testTask(Context context){
+    public static Intent testTask(Context context, Bundle className){
         Intent intent = new Intent(context, GoogleActivity.class);
+        intent.putExtras(className);
         return intent;
     }
 }
