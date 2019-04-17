@@ -1,5 +1,6 @@
 package com.foodbreak.vishad.toasterlibrary;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v4.view.ViewParentCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -18,10 +19,11 @@ public class GoogleActivity extends AppCompatActivity {
         setContentView(webView);
         webView.loadUrl("https://www.google.com.pk/");
     }
-    public void onBackPressed() {
+    public void onBackPressed(Activity main) {
         //  this.startActivity(new Intent(GoogleActivity.this, getParent().getClass()));
        // Bundle bundle = getIntent().getExtras();
-        Intent intent = new Intent(this, getParent().getClass());
+        Intent intent = new Intent(this,main.getClass());
+       // Intent intent = new Intent(this, getParent().getClass());
         startActivity(intent);
         GoogleActivity.this.finish();
     }
