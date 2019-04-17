@@ -1,2 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.foodbreak.vishad.toasterlibrary" />
+    package="com.foodbreak.vishad.toasterlibrary">
+
+    <application>
+        <activity android:name=".GoogleActivity"></activity>
+    </application>
+
+</manifest>
